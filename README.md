@@ -1,43 +1,24 @@
-# Wakacyjne Wyzwanie 2026 - Frontend
+# ☀️ Wakacyjne Wyzwanie 2026 – moja frontendowa przygoda
 
-## O kursie
+Latem 2026 wziąłem udział w **Wakacyjnym Wyzwaniu** – 7-tygodniowym kursie frontendu prowadzonym przez [KN Solvro](https://solvro.pwr.edu.pl/) (Politechnika Wrocławska). Co tydzień: wykład, nowy temat i zadanie praktyczne oddawane przez Pull Request.
 
-Wakacyjne Wyzwanie to wewnętrzny kurs KN Solvro, w ramach którego uczestnicy krok po kroku poznają nowoczesny frontend webowy oparty o **Next.js**, **TypeScript** i **Tailwind CSS**. Kurs prowadzony jest przez członków sekcji frontend - w formie cotygodniowych wykładów i zadań praktycznych, od podstaw aż po zaawansowane zagadnienia związane z routingiem, pobieraniem danych i renderowaniem stron.
+To repozytorium jest zapisem tej drogi – **od pierwszego komponentu w React po renderowanie ISR i SEO w Next.js**. Każdy folder to osobny tydzień, więc najlepiej czytać je po kolei i widać, jak z tygodnia na tydzień rosła skala i złożoność zadań.
 
-## Wymagane umiejętności/narzędzia na wstępie
+![Next.js](https://img.shields.io/badge/Next.js_16-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?logo=tailwindcss&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?logo=reactquery&logoColor=white)
 
-- Podstawowa znajomość HTML i CSS
-- Podstawowa znajomość JavaScript (zmienne, funkcje, warunki, pętle)
-- Zainstalowane: [Node.js](https://nodejs.org/) (LTS), [Git](https://git-scm.com/), edytor kodu (polecany [VS Code](https://code.visualstudio.com/))
-- Konto na [GitHubie](https://github.com/)
+## 🗺️ Tydzień po tygodniu
 
-## Rozdziały - zakres kursu
-
-| # | Rozdział | Zakres |
-|---|----------|--------|
-| 1 | [Wstęp](./rozdzial-1-wstep) | Organizacja kursu, Git/GitHub, TypeScript, React |
-| 2 | [Pierwszy projekt](./rozdzial-2-pierwszy-projekt) | Tworzenie projektu Next.js, podstawy Tailwind CSS |
-| 3 | [Komponenty nextowe](./rozdzial-3-komponenty-nextowe) | `next/image`, `next/link`, `next/font`, `next/script` |
-| 4 | [Routing](./rozdzial-4-routing) | App Router, `layout`/`page`/`loading`/`error`, parallel routes |
-| 5 | [Shadcn i UI](./rozdzial-5-shadcn-i-ui) | Dobre praktyki UI, Shadcn, zaawansowany Tailwind CSS |
-| 6 | [Ładowanie danych](./rozdzial-6-ladowanie-danych) | Komponenty client/server, fetch po serwerze i po kliencie (React Query) |
-| 7 | [Static vs dynamic](./rozdzial-7-static-vs-dynamic) | Statyczne vs dynamiczne renderowanie, SEO i metadane |
-
-Każdy rozdział prowadzą 2 osoby - jedna przygotowuje i przedstawia wykład (prezentacja + omówienie), druga przygotowuje zadanie/zadania praktyczne do tematu.
-
-## Zasady uczestnictwa
-
-- Zajęcia (wykład + zadanie) odbywają się raz w tygodniu, przez 7 tygodni wakacji.
-- Każdy rozdział prowadzi 2-osobowy zespół: jedna osoba odpowiada za wykład (prezentacja + omówienie tematu), druga za przygotowanie zadania/zadań.
-- Materiały (prezentacja, nagranie, treść zadania) wrzucamy do folderu odpowiadającego danemu rozdziałowi w tym repozytorium.
-- Rozwiązania zadań oddajemy poprzez Pull Requesta do tego repozytorium (do brancha/folderu wskazanego w treści zadania) - opisujemy w nim krótko co zostało zrobione.
-- Zadania oddajemy do terminu podanego przy danym rozdziale - w razie problemów/opóźnień dajemy znać prowadzącym dany rozdział.
-- Pytania i wątpliwości zgłaszamy na bieżąco - najlepiej na kanale kursu na Discordzie Solvro lub w Issues tego repozytorium.
-
-## Linki
-
-- Strona Solvro: [solvro.pwr.edu.pl](https://solvro.pwr.edu.pl/)
-- Facebook: [facebook.com/knsolvro](https://www.facebook.com/knsolvro)
-- LinkedIn: [linkedin.com/company/knsolvro](https://www.linkedin.com/company/knsolvro)
-- GitHub: [github.com/Solvro](https://github.com/Solvro)
-- E-mail: [kn.solvro@pwr.edu.pl](mailto:kn.solvro@pwr.edu.pl)
+| # | Rozdział | Co zbudowałem | Czego się nauczyłem |
+|---|----------|---------------|---------------------|
+| 1 | [Wstęp](./rozdzial-1-wstep) | Komponent `ProjectCard` – wizytówka projektu z listą technologii i przełączanym statusem | React + Vite, komponenty, propsy typowane w TypeScript, `useState`, renderowanie list |
+| 2 | [Pierwszy projekt](./rozdzial-2-pierwszy-projekt) | Pierwsza aplikacja Next.js z kartą członka zespołu `TeamMemberCard` | Struktura projektu Next.js, Tailwind CSS, responsywność, tryb ciemny |
+| 3 | [Komponenty nextowe](./rozdzial-3-komponenty-nextowe) | Rozbudowana karta ze zdjęciem, własną czcionką i linkiem | `next/image`, `next/link`, `next/font`, `next/script` – optymalizacje wbudowane w Next.js |
+| 4 | [Routing](./rozdzial-4-routing) | Aplikacja z listą użytkowników, dynamicznymi profilami i panelem statystyk | App Router, trasy dynamiczne `[id]`, **parallel routes** (`@stats`), `loading` / `error` / `not-found` |
+| 5 | [Shadcn i UI](./rozdzial-5-shadcn-i-ui) | Odświeżony interfejs: karty profili, nawigacja w zakładkach, profil otwierany w modalu | shadcn/ui (Card, Avatar, Dialog, Tabs, Skeleton), **intercepting routes** `(.)users/[id]`, container queries |
+| 6 | [Ładowanie danych](./rozdzial-6-ladowanie-danych) | Katalog produktów z wyszukiwarką na żywo i formularzem dodawania produktu | Server vs Client Components, fetch po stronie serwera, **TanStack Query** (`useQuery`, `useMutation`, `initialData`, invalidacja cache) |
+| 7 | [Static vs dynamic](./rozdzial-7-static-vs-dynamic) | „Render & SEO Lab” – katalog przyjazny wyszukiwarkom | **SSG / ISR / SSR** (`revalidate`, `force-dynamic`, `generateStaticParams`), `generateMetadata`, Open Graph, canonical, `sitemap.ts`, `robots.ts`, deduplikacja zapytań przez `cache()` |
